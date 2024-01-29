@@ -1,0 +1,50 @@
+# Node.js
+node_modules/
+
+# TypeScript
+*.tsbuildinfo
+*.js
+*.map
+*.js.map
+*.d.ts
+
+# Visual Studio Code
+.vscode/
+
+# npm
+package-lock.json
+
+# Yarn
+yarn.lock
+
+# IDE settings
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.suo
+*.user
+*.bak
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+
+# Build process
+dist/
+out/
+build/
+*.tar.gz
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -10,7 +10,7 @@ if(numero > 10) {
     console.log(`O numero ${numero} é menor que 10`)
 }
 
-// Utilizando um objeto literal como estrura de decisão
+// Utilizando um objeto literal como estrura de decisão.
 
 const typeUser = {
     admin: 'Permissão de administrador',

@@ -1,8 +1,8 @@
-import { Center, SimpleGrid, Spinner } from "@chakra-ui/react"
+import { Center, Grid, SimpleGrid, Spinner, Text, GridItem, Box } from "@chakra-ui/react"
 import { CardInfo } from "../../components/Card/CardInfo"
 import { useState, useEffect } from "react"
 import { api } from "../../services/api"
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams, useNavigate, Link } from "react-router-dom"
 
 interface UserData {
     id: string
@@ -53,6 +53,24 @@ export const Conta = () => {
                             <CardInfo mainContent={`Bem vindo ${userData?.name}`} 
                             content={`${day}/${month}/${year} - ${hours}:${minutes}`}/>
                             <CardInfo mainContent='Saldo em conta: ' content={`R$ ${userData?.balance}`}/>
+                            
+                            <GridItem colSpan={3} mb={4} ml={0} mr={7}>
+                                <Link to='/main'> 
+                                    <Box 
+                                        backgroundColor={'#F1EFFF'} 
+                                        color={'#000'}
+                                        width={'100%'}
+                                        padding={5}
+                                        borderRadius={25}
+                                        >
+                                        <Text fontSize={'2xl'} fontWeight={'bold'}>
+                                            <Center>
+                                                Voltar
+                                            </Center>
+                                        </Text>
+                                    </Box>
+                                </Link> 
+                            </GridItem>
                         </>
                     )
                 }

@@ -1,32 +1,19 @@
 import { Box, Grid, GridItem, Center, Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
-
 import { CardButtons } from '../../components/Card/CardButtons'
 
-export const Main = () => {
+export const  OpcoesDeposito = () => {
     return (
         <Box className='container'>
-            <Grid templateColumns={'repeat(3, 1fr)'} gap={4}>
+            <Grid templateColumns={'repeat(2, 1fr)'} gap={4}>
                 <GridItem mb={4} ml={7} mr={7}>
-                    <CardButtons text='Depósito' to='/opcoes-deposito/1' />
+                    <CardButtons text='Depósito em Dinheiro' to='/deposito-dinheiro/1' width={500}/>
                 </GridItem>
                 <GridItem mb={4} ml={7} mr={7}>
-                    <CardButtons text='Saque' to='/' />
-                </GridItem>
-                <GridItem mb={4} ml={7} mr={7}>
-                    <CardButtons text='Saldo na Tela' to='/conta/1'/>
-                </GridItem>
-                <GridItem mb={4} ml={7} mr={7}>
-                    <CardButtons text='Pagamentos' to='/' />
-                </GridItem>
-                <GridItem mb={4} ml={7} mr={7}>
-                    <CardButtons text='Transferência' to='/' />
-                </GridItem>
-                <GridItem mb={4} ml={7} mr={7}>
-                    <CardButtons text='Empréstimo' to='/' />
+                    <CardButtons text='Depósito em Cheque' to='/opcoes-deposito/1' width={500}/>
                 </GridItem>
                 <GridItem colSpan={3} mb={4} ml={7} mr={7}>
-                    <Link to='/'> 
+                    <Link to='/main'> 
                         <Box 
                             backgroundColor={'#F1EFFF'} 
                             color={'#000'}
@@ -36,12 +23,12 @@ export const Main = () => {
                             >
                             <Text fontSize={'2xl'} fontWeight={'bold'}>
                                 <Center>
-                                    Sair
+                                    Voltar
                                 </Center>
                             </Text>
                         </Box>
                     </Link> 
-                </GridItem>                 
+                </GridItem> 
             </Grid>
         </Box>
     )

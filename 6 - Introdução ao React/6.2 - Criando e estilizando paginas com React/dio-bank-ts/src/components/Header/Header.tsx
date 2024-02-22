@@ -26,9 +26,9 @@ import {
                     Dio Bank
                 </Box>
                     <UnorderedList listStyleType="none" display="flex" alignItems="center">
-                        <ListItem marginRight="15px"><Link _hover={{ color: '#E5E044' }}>Home</Link></ListItem>
+                        <ListItem marginRight="15px"><Link _hover={{ color: '#E5E044' }}>Início</Link></ListItem>
+                        <ListItem marginRight="15px"><Link _hover={{ color: '#E5E044' }}>Abra a sua conta</Link></ListItem>
                         <ListItem marginRight="15px"><Link _hover={{ color: '#E5E044' }}>Sobre Nós</Link></ListItem>
-                        <ListItem><Link _hover={{ color: '#E5E044' }}>Contato</Link></ListItem>
                     </UnorderedList>
                 </Flex>
             </header>

@@ -1,12 +1,8 @@
 import { 
     ChakraProvider,
     Flex, 
-    Box,
-    UnorderedList,
-    ListItem,
-    Link
+    Box
   } from '@chakra-ui/react'
-
 
   export const Header = () => {
     return (
@@ -25,11 +21,14 @@ import {
                 >
                     Dio Bank
                 </Box>
+                
+                {/*
                     <UnorderedList listStyleType="none" display="flex" alignItems="center">
                         <ListItem marginRight="15px"><Link _hover={{ color: '#E5E044' }}>Início</Link></ListItem>
                         <ListItem marginRight="15px"><Link _hover={{ color: '#E5E044' }}>Abra a sua conta</Link></ListItem>
                         <ListItem marginRight="15px"><Link _hover={{ color: '#E5E044' }}>Sobre Nós</Link></ListItem>
                     </UnorderedList>
+    */}
                 </Flex>
             </header>
             </Box>

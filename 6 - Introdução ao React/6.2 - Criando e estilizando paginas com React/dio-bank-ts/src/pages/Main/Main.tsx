@@ -1,5 +1,4 @@
-import { Box, Grid, GridItem, Center, Text } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+import { Box, Grid, GridItem, Flex } from '@chakra-ui/react'
 
 import { CardButtons } from '../../components/Card/CardButtons'
 
@@ -25,24 +24,10 @@ export const Main = () => {
                 <GridItem mb={4} ml={7} mr={7}>
                     <CardButtons text='Empréstimo' to='/' />
                 </GridItem>
-                <GridItem colSpan={3} mb={4} ml={7} mr={7}>
-                    <Link to='/'> 
-                        <Box 
-                            backgroundColor={'#F1EFFF'} 
-                            color={'#000'}
-                            width={'100%'}
-                            padding={5}
-                            borderRadius={25}
-                            >
-                            <Text fontSize={'2xl'} fontWeight={'bold'}>
-                                <Center>
-                                    Sair
-                                </Center>
-                            </Text>
-                        </Box>
-                    </Link> 
-                </GridItem>                 
             </Grid>
+            <Flex justify="flex-end" mt={4} mr={7}>
+                <CardButtons text='Sair' to='/' />
+            </Flex>
         </Box>
     )
 }

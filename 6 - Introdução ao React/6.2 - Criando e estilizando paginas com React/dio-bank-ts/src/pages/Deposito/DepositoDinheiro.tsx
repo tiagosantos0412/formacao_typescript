@@ -7,8 +7,6 @@ import {
     FormControl,
     FormLabel,
     Input,
-    Grid,
-    GridItem,
     Flex
  } from "@chakra-ui/react"
  import { CardButtons } from '../../components/Card/CardButtons'
@@ -48,7 +46,7 @@ export const DepositoDinheiro = () => {
                 </Box>
             </Stack>
             <Flex justify={"space-between"} mt={20}>
-                <CardButtons text='Voltar' to='/main'mr={2}/>
+                <CardButtons text='Cancelar' to='/main'mr={2}/>
                 <CardButtons text='Continuar' to='/main' ml={2}/>
             </Flex>
             

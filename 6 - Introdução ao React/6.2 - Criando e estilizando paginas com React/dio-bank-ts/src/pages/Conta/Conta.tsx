@@ -21,6 +21,7 @@ export const Conta = () => {
     const navigate = useNavigate()
 
     const { isLoggedIn } = useContext(AppContext)
+    console.log('Retorno da página conta', isLoggedIn)
     !isLoggedIn && navigate('/')
    
     if(userData && id !== userData.id) {

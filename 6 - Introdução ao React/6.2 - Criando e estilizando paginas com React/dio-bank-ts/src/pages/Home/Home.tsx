@@ -36,7 +36,7 @@ export const Home = () => {
                 
                     <Center>
                         <Button
-                            onClick={() => login(conta, password)}
+                            onClick={() => login(conta, password, name)}
                             bg={'#a03ad9'}
                             variant='solid'
                             color="white"

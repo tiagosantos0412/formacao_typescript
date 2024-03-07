@@ -3,8 +3,13 @@ import {
     Flex, 
     Box
   } from '@chakra-ui/react'
+import { useContext } from 'react'
+import { AppContext } from '../AppContext/AppContext'
+
 
   export const Header = () => {
+    const context = useContext(AppContext)
+    console.log('retorno do header', context)
     return (
         <ChakraProvider>
             <Box marginBottom={10} bg={'#000'} height={100}>

@@ -1,13 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
 import { Rotas } from "./components/Routes/Rotas";
+import { AppContextProvider } from "./components/AppContext/AppContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <Rotas />
-      </Layout>
+      <AppContextProvider>
+        <Layout>
+          <Rotas />
+        </Layout>
+      </AppContextProvider>
     </BrowserRouter>
   )
 }

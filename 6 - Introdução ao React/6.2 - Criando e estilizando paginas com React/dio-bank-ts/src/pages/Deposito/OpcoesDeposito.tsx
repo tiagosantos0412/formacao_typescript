@@ -13,7 +13,7 @@ export const  OpcoesDeposito = () => {
                 </GridItem> 
             </Grid>
             <Flex justify="flex-start" mt={4} ml={7}>
-                <CardButtons text='Voltar' to='/main' />
+                <CardButtons text='Voltar' to='/main/1' />
             </Flex>
         </Box>
     )

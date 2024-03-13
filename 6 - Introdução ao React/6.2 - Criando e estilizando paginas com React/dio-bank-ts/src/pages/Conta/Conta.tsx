@@ -62,7 +62,7 @@ export const Conta = () => {
                             <CardInfo mainContent='Saldo em conta: ' content={`R$ ${userData?.balance}`}/>
                             
                             <Flex justify="flex-start" mt={4} mr={7}>
-                                <CardButtons text='Voltar' to='/main' />
+                                <CardButtons text='Voltar' to='/main/1' />
                             </Flex>
                         </>
                     )

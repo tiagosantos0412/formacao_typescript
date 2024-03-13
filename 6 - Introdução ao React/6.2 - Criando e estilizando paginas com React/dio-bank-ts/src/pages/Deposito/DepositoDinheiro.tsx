@@ -46,8 +46,8 @@ export const DepositoDinheiro = () => {
                 </Box>
             </Stack>
             <Flex justify={"space-between"} mt={20}>
-                <CardButtons text='Cancelar' to='/main'mr={2}/>
-                <CardButtons text='Continuar' to='/main' ml={2}/>
+                <CardButtons text='Cancelar' to='/main/1'mr={2}/>
+                <CardButtons text='Continuar' to='/main/1' ml={2}/>
             </Flex>
             
         </Box>
